@@ -1,0 +1,66 @@
+打开浏览器
+登陆阿里云帐号哦
+帐号就是支付宝帐号 
+https://cr.console.aliyun.com/?spm=5176.166170.863063.btn1cr3.5385217fyNRDX3#/dockerImage/cn-beijing/yixuan/ddd/detail
+
+打tag
+名称是固定的，必须这样命名这是仓库镜像的规定 是 死的
+
+docker.io/cs2cdocker/httpd:v13.0 registry.cn-beijing.aliyuncs.com/yixuan/ddd:
+
+tag是你的镜像名称
+例如httpdv13.0-20180712
+
+
+#docker tag docker.io/cs2cdocker/httpd:v13.0 registry.cn-beijing.aliyuncs.com/yixuan/ddd:httpdv13.0-20180712
+
+再命令行登陆阿里云帐号
+[root@10 ~]# docker login --username=188$$$$$$ registry.cn-beijing.aliyuncs.com
+Password: 
+Login Succeeded
+docker push registry.cn-beijing.aliyuncs.com/yixuan/ddd:httpdv13.0-20180712
+
+
+
+
+
+
+
+
+
+
+阿里云南镜像仓库首页有   帮助
+
+写的非常清楚
+
+
+ddd
+ 
+注意:镜像域名地址已经变更，需要重新进行docker login. 另外您可以通过访问私网镜像仓库地址的域名,来加快您镜像下载速度并减少公网流量开销,如果您的机器在VPC网络中,请访问VPC网络地址
+
+基本信息
+repo image
+镜像名称:ddd
+镜像性质:私有
+公网地址:docker pull registry.cn-beijing.aliyuncs.com/yixuan/ddd
+经典内网:docker pull registry-internal.cn-beijing.aliyuncs.com/yixuan/ddd
+VPC网络:docker pull registry-vpc.cn-beijing.aliyuncs.com/yixuan/ddd
+代码仓库:https://github.com/tigerruncode/aa20180521
+镜像地域:华北 2
+摘要20180521ddd
+描述
+ddd
+
+操作指南
+登录阿里云docker registry:
+  $ sudo docker login --username=18810950523 registry.cn-beijing.aliyuncs.com
+登录registry的用户名是您的阿里云账号全名，密码是您开通服务时设置的密码。
+
+你可以在镜像管理首页点击右上角按钮修改docker login密码。
+
+从registry中拉取镜像：
+  $ sudo docker pull registry.cn-beijing.aliyuncs.com/yixuan/ddd:[镜像版本号]
+将镜像推送到registry：
+  $ sudo docker login --username= registry.cn-beijing.aliyuncs.com
+  $ sudo docker tag [ImageId] registry.cn-beijing.aliyuncs.com/yixuan/ddd:[镜像版本号]
+  $ sudo docker push registry.cn-beijing.aliyuncs.com/yixuan/ddd:[镜像版本号]
