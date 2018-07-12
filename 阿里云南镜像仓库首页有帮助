@@ -3,14 +3,22 @@
 帐号就是支付宝帐号 
 https://cr.console.aliyun.com/?spm=5176.166170.863063.btn1cr3.5385217fyNRDX3#/dockerImage/cn-beijing/yixuan/ddd/detail
 
-打tag
+
+##############阿里云南镜像仓库首页有帮助
+
+
+
+#######打tag
 名称是固定的，必须这样命名这是仓库镜像的规定 是 死的
 
 docker.io/cs2cdocker/httpd:v13.0 registry.cn-beijing.aliyuncs.com/yixuan/ddd:
 
-tag是你的镜像名称
-例如httpdv13.0-20180712
-
+####tag是你的镜像名称
+###例如
+httpdv13.0-20180712
+####
+##完整名称
+registry.cn-beijing.aliyuncs.com/yixuan/ddd:httpdv13.0-20180712
 
 #docker tag docker.io/cs2cdocker/httpd:v13.0 registry.cn-beijing.aliyuncs.com/yixuan/ddd:httpdv13.0-20180712
 
